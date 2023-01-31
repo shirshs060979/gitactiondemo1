@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Greet user
-        run: echo "hello Bhai saab going to build
+        run: echo hello Bhai saab going to build
     
 
     
