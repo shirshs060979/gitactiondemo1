@@ -1,0 +1,23 @@
+name: SecondCI
+on:
+  pull_request:
+    branches: ["main"]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: job Greeting
+        run: echo hello welcome to build
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: job greeting
+        run: echo hello welcome to test
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: job greeting
+        run: echo hello welcome to deploy
+  
+    
